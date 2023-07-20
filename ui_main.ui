@@ -12,19 +12,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
+    <width>450</width>
     <height>550</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>400</width>
+    <width>450</width>
     <height>550</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>400</width>
+    <width>450</width>
     <height>550</height>
    </size>
   </property>
@@ -60,7 +60,7 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>401</width>
+      <width>452</width>
       <height>521</height>
      </rect>
     </property>
@@ -88,14 +88,11 @@
       </widget>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_10">
-       <property name="leftMargin">
-        <number>30</number>
-       </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
        <property name="rightMargin">
         <number>30</number>
        </property>
-       <item alignment="Qt::AlignLeft">
+       <item>
         <widget class="QLabel" name="label_7">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -103,15 +100,24 @@
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
          <property name="text">
-          <string>App Id</string>
+          <string>Id</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QLineEdit" name="lnedit_app_id">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -130,6 +136,58 @@
          </property>
         </widget>
        </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>25</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="font">
+          <font>
+           <family>Consolas</family>
+           <pointsize>10</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Connect</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Consolas</family>
+           <pointsize>10</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Disconnect</string>
+         </property>
+        </widget>
+       </item>
       </layout>
      </item>
      <item>
@@ -143,7 +201,7 @@
        <item>
         <widget class="QLabel" name="label_6">
          <property name="text">
-          <string>Header text</string>
+          <string>Details</string>
          </property>
         </widget>
        </item>
@@ -153,27 +211,7 @@
       </layout>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_8">
-       <property name="leftMargin">
-        <number>30</number>
-       </property>
-       <property name="rightMargin">
-        <number>30</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="label_5">
-         <property name="text">
-          <string>Decsription text</string>
-         </property>
-        </widget>
-       </item>
-       <item alignment="Qt::AlignRight">
-        <widget class="QLineEdit" name="lnedit_description"/>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="0,0,0">
+      <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="0,0">
        <property name="leftMargin">
         <number>30</number>
        </property>
@@ -189,29 +227,6 @@
        </item>
        <item alignment="Qt::AlignRight">
         <widget class="QLineEdit" name="lnedit_large_image"/>
-       </item>
-       <item>
-        <widget class="QPushButton" name="btn_open_large_image">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>30</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>res/icons/folder.png</normaloff>res/icons/folder.png</iconset>
-         </property>
-        </widget>
        </item>
       </layout>
      </item>
@@ -252,23 +267,6 @@
        </item>
        <item alignment="Qt::AlignRight">
         <widget class="QLineEdit" name="lnedit_small_image"/>
-       </item>
-       <item>
-        <widget class="QPushButton" name="btn_open_small_image">
-         <property name="maximumSize">
-          <size>
-           <width>30</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>res/icons/folder.png</normaloff>res/icons/folder.png</iconset>
-         </property>
-        </widget>
        </item>
       </layout>
      </item>
@@ -342,7 +340,7 @@
      <rect>
       <x>0</x>
       <y>520</y>
-      <width>400</width>
+      <width>451</width>
       <height>21</height>
      </rect>
     </property>
