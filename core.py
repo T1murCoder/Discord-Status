@@ -12,11 +12,11 @@ def start_rpc(rpc: Presence):
     rpc.connect()
 
 
-def update_rpc(rpc, state=None, details=None, large_image=None, large_text=None, small_image=None, small_text=None):
+def update_rpc(rpc: Presence, state=None, details=None, large_image=None, large_text=None, small_image=None, small_text=None):
     rpc.update(state=state, details=details, large_image=large_image, large_text=large_text, small_image=small_image, small_text=small_text)
 
 
-def close_rpc(rpc):
+def close_rpc(rpc: Presence):
     rpc.close()
 
 
