@@ -201,12 +201,12 @@
        <item>
         <widget class="QLabel" name="label_6">
          <property name="text">
-          <string>Details</string>
+          <string>State</string>
          </property>
         </widget>
        </item>
        <item alignment="Qt::AlignRight">
-        <widget class="QLineEdit" name="lnedit_details_text"/>
+        <widget class="QLineEdit" name="lnedit_state_text"/>
        </item>
       </layout>
      </item>
@@ -221,12 +221,12 @@
        <item>
         <widget class="QLabel" name="label_8">
          <property name="text">
-          <string>State</string>
+          <string>Details</string>
          </property>
         </widget>
        </item>
        <item alignment="Qt::AlignRight">
-        <widget class="QLineEdit" name="lnedit_state_text"/>
+        <widget class="QLineEdit" name="lnedit_details_text"/>
        </item>
       </layout>
      </item>
