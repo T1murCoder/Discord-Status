@@ -14,5 +14,5 @@
 - Переработка интерфейса
 
 ## Установка
-1. Скачать ветку [community](https://https://github.com/T1murCoder/Discord-Status/tree/community) и распаковать в удобное место содержимое директории ```app```.
+1. Скачать ветку [community](https://github.com/T1murCoder/Discord-Status/tree/community) и распаковать в удобное место содержимое директории ```app```.
 2. Запустить ```Discord RPC Status.exe```.
