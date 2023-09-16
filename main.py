@@ -52,8 +52,8 @@ class CustomDiscordStatusWindow(QMainWindow, Ui_MainWindow):
         
         self.config = {
             "app_id": self.lnedit_app_id.text(),
-            "details_text": self.lnedit_details_text.text(),
             "state_text": self.lnedit_state_text.text(),
+            "details_text": self.lnedit_details_text.text(),
             "large_image": self.lnedit_large_image.text(),
             "large_text": self.lnedit_large_text.text(),
             "small_image": self.lnedit_small_image.text(),
@@ -75,8 +75,8 @@ class CustomDiscordStatusWindow(QMainWindow, Ui_MainWindow):
                 self.config = json.load(file)
             
             self.lnedit_app_id.setText(self.config.get("app_id", ""))
-            self.lnedit_details_text.setText(self.config.get("details_text", ""))
             self.lnedit_state_text.setText(self.config.get("state_text", ""))
+            self.lnedit_details_text.setText(self.config.get("details_text", ""))
             self.lnedit_large_image.setText(self.config.get("large_image", ""))
             self.lnedit_large_text.setText(self.config.get("large_text", ""))
             self.lnedit_small_image.setText(self.config.get("small_image", ""))
@@ -85,8 +85,8 @@ class CustomDiscordStatusWindow(QMainWindow, Ui_MainWindow):
         except Exception:
             self.config = {
             "app_id": "",
-            "details_text": "",
             "state_text": "",
+            "details_text": "",
             "large_image": "",
             "large_text": "",
             "small_image": "",
